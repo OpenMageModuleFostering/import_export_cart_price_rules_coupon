@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package>
+    <name>import_export_cart_price_rules_coupon</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Quick and easy solution for importing custom coupon codes in Magento&amp;lt;br&amp;gt;&#xD;
+Import hundreds of coupon at once with your shopping cart price rules&amp;lt;br&amp;gt;&#xD;
+Simplt create CSV as in given format.&#xD;
+Import coupons as well as shopping cart price rules with all conditions provide by Magento&amp;lt;br&amp;gt;&#xD;
+Import an unlimited amount of coupon codes in easiest way.</summary>
+    <description>&amp;lt;h3&amp;gt;Bulk import custom Magento coupons &amp;amp; shopping cart price rules with easy&amp;lt;/h3&amp;gt;&#xD;
+&#xD;
+&amp;lt;p&amp;gt;Our Coupon Import extension for Magento provides a &amp;lt;strong&amp;gt;simple and quick solution for importing custom coupon codes with shopping cart price rules.&amp;lt;/strong&amp;gt; &amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &#xD;
+&#xD;
+Maybe you&amp;apos;d like to import coupons received for marketing campaigns or other purpose. With Coupon Import for Magento you can bulk upload your custom coupons in a less time, whether it&amp;apos;s just a couple or thousands coupons at once!&amp;lt;/p&amp;gt;&#xD;
+&#xD;
+&amp;lt;h3&amp;gt;Upload thousands of coupon codes in a snap&amp;lt;/h3&amp;gt;&#xD;
+&#xD;
+&amp;lt;p&amp;gt;Coupon Import for Magento offers two ways of bulk importing your custom coupons in your shopping cart price rule.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
+&#xD;
+All your import CSV file will uploaded under /media/import/coupon/&#xD;
+Once you will import that CSV file it will move to archives with rename it prefix by [ymd]_coupon.csv under /media/import/coupon/archives/ymd_coupon.csv for your future backup or reused.&#xD;
+&#xD;
+Shopping Cart Price Rules grid have field to display no. of usage of coupons.&#xD;
+&#xD;
+&amp;lt;h3&amp;gt;Export&amp;lt;/h3&amp;gt;&#xD;
+We have implemented default grid export functionality to Shopping Cart Price Rules.&#xD;
+So, this export csv file field names will be change. So do not use exported CSV file directly to import.&#xD;
+You have to refer sample coupon CSV format for import. You will found it under /media/import/coupon/sample_coupon.csv&#xD;
+Below are some of field explanation with their values.&#xD;
+&#xD;
+rule_name	: Specify rule name&#xD;
+description	: Specify rule description&#xD;
+status		: 0 for Inactive, 1 for Active&#xD;
+customer_group	: Customer Group Id, if more than one group then put comma separated  value. eg. 1,2,3&#xD;
+coupon_code		: coupon code (numeric or Alphanumeric)&#xD;
+from_date		: Date should be in format like 7/20/2015&#xD;
+to_date			: Date should be in format like 7/30/2015&#xD;
+discount_type	: the value should be by_percent, cart_fixed, by_fixed.&#xD;
+discount_amount	: If you selected by_percent then value no more than 100.&#xD;
+user_per_coupon	: Number of user per coupon&#xD;
+stop_rules_processing	: 0 for No, 1 for Yes	&#xD;
+uses_per_customer		: No. of usage per coupon&#xD;
+simple_free_shipping	: 0 for No, 1 for Yes&#xD;
+website					: Mention website id. If more than one then put comma separated value. e.g. 1,2,3&#xD;
+discount_qty			: If you selected discount_type as by_fixed then you have to set this value otherwise it will apply each qty of cart item.</description>
+    <notes>Import Export Coupon with Shopping Cart Price Rules</notes>
+    <authors><author><name>Praful Rajput</name><user>vasuscoin</user><email>rajput.praful@gmail.com</email></author></authors>
+    <date>2015-07-28</date>
+    <time>10:51:11</time>
+    <contents><target name="magelocal"><dir name="Bdt"><dir name="Coupon"><dir><dir name="Block"><dir name="Adminhtml"><dir name="Promo"><dir name="Quote"><file name="Grid.php" hash="310c61f1d0f4bca36a72c635bb3a6430"/><dir name="Import"><file name="Form.php" hash="b1bdf4add4b60c89df0b90024f716de9"/></dir><file name="Import.php" hash="77aba2a1631bb0d817f9b72bfe9e3e17"/></dir><file name="Quote.php" hash="aff3e0f94fa6160e978a8c08e90536e2"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="ff05635d5ecda82cc01343fee1cef358"/></dir><dir name="Model"><file name="Coupon.php" hash="813dc1faf8cb94d58f2087a4ffb8fd9c"/></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Promo"><file name="QuoteController.php" hash="8991f27427bb334abd8a9de95eece613"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="96a81e7379db047058f4f610ffb2613c"/></dir></dir></dir></dir></target><target name="magemedia"><dir name="import"><dir name="coupon"><file name="sample_coupon.csv" hash="6b101feb99a5375036ed80bc2ad98338"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Bdt_Coupon.xml" hash="828e75964a12d9396a1bcc11a5de0526"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

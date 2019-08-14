@@ -1,0 +1,20 @@
+{
+    "name": "OpenMageModuleFostering/import_export_cart_price_rules_coupon",
+    "type": "magento-module",
+    "license": "Open-Software-License",
+    "homepage": "",
+    "description": "Quick and easy solution for importing custom coupon codes in Magento&lt;br&gt;
+Import hundreds of coupon at once with your shopping cart price rules&lt;br&gt;
+Simplt create CSV as in given format.
+Import coupons as well as shopping cart price rules with all conditions provide by Magento&lt;br&gt;
+Import an unlimited amount of coupon codes in easiest way.",
+    "authors": [
+    {
+        "name": "Praful Rajput",
+        "email": "rajput.praful@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
