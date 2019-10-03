@@ -1,5 +1,7 @@
 {
     "keywords": [
         "openmage-module"
-    ]
+    ],
+    "name": "openmage-module-fostering\/import_export_cart_price_rules_coupon",
+    "license": "OSL-3.0"
 }
